@@ -1,16 +1,13 @@
-import math
 class Task:
-    def __init__(self, id, vehicle, relese_time, execution_cycles, size):
+    def __init__(self, id, app_id, vehicle_id, execution_time, size, is_last_dag_task=False):
         self.id = id
-        self.vehicle = vehicle
-        self.release_time = relese_time
+        self.app_id = app_id
+        vehicle_id = vehicle_id
         self.size = size  # in MBs
-        self.execution_time = None
-        self.execution_cycles = execution_cycles
+        self.execution_time = execution_time
         self.start_time = None
         self.end_time = None
-        self.energy = 0
-        self.execution_location = None
+        self.is_last_dag_task = is_last_dag_task
 
     def is_finished(self, time):
         if self.start_time + self.execution_time == time:
@@ -18,16 +15,6 @@ class Task:
             return True
         return False
             
-    # def print_task_info(self):
-        # print(f"Task ID: {self.id}, Execution Time: {self.execution_time} seconds")
+    def print_task_info(self):
+        print(f"Task ID: {self.id}, DAG ID: {self.app_id}, Execution Time: {self.execution_time} seconds, Is Last DAG Task: {self.is_last_dag_task}")
 
-    def set_execution_time(self, frequency):
-        self.execution_time = (self.execution_cycles  / frequency) * 1000
-        self.execution_time = math.ceil(self.execution_time)# in milicseconds
-        # print(f"Execution Time: {self.execution_time} miliseconds")
-        
-    def add_transmission_energy(self, trasmission_power, bandwidth):
-        self.energy += (trasmission_power * self.size) / bandwidth  # in Joules
-        
-    def add_execution_energy(self, frequency):
-        self.energy += (10**-28)*(frequency ** 2)*(self.execution_cycles) # in Joules

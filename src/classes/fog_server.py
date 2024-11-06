@@ -1,11 +1,9 @@
-class EdgeServer:
-    def __init__(self, id, cores, x, y, memory,bandwidth):
+class FogServer:
+    def __init__(self, id, cores, x, y, memory, bandwidth):
         self.id = id
         self.cores = cores
         self.x = x
         self.y = y
         self.memory = memory
         self.bandwidth = bandwidth
-        self.task_queue = []
-
         

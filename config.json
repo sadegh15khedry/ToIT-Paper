@@ -1,0 +1,201 @@
+{
+    "edge_servers": 
+    [
+        {
+            "id": 1,
+            "x": 100,
+            "y": 200,
+            "memory": 4000,
+            "bandwidth": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "x": 100,
+            "y": 200,
+            "memory": 4000,
+            "bandwidth": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "x": 100,
+            "y": 200,
+            "memory": 4000,
+            "bandwidth": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ]
+        }
+    ],
+    "fog_servers":  
+    [
+        {
+            "id": 1,
+            "x": 100,
+            "y": 200,
+            "memory": 4000,
+            "bandwidth": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "x": 100,
+            "y": 200,
+            "memory": 4000,
+            "bandwidth": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ]
+        }
+    ],
+    "cloud_servers":  
+    [
+        {
+            "id": 1,
+            "x": 100,
+            "y": 200,
+            "memory": 4000,
+            "bandwidth": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ]
+        }
+    ],
+    "vehicles": 
+    [
+        {
+            "id": 1,
+            "x": 100,
+            "y": 200,
+            "speed": 4000,
+            "direction": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ],
+            "memory": 1000,
+            "bandwidth": 500
+        },
+        {
+            "id": 2,
+            "x": 100,
+            "y": 200,
+            "speed": 4000,
+            "direction": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ],
+            "memory": 1000,
+            "bandwidth": 500
+        },
+        {
+            "id": 3,
+            "x": 100,
+            "y": 200,
+            "speed": 4000,
+            "direction": 1000,
+            "cores": 
+            [
+                {
+                    "id": 1,
+                    "frequency": 50,
+                    "voltage": 80
+                },
+                {
+                    "id": 2,
+                    "frequency": 50,
+                    "voltage": 80
+                }
+            ],
+            "memory": 1000,
+            "bandwidth": 500
+        }
+    ]
+
+}
