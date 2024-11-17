@@ -1,2 +1,1 @@
-# ToIT-Paper
-The paper for ToIT
+# TIoT Paper

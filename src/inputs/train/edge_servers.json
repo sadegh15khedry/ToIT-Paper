@@ -3,65 +3,65 @@
     [
         {
             "id": 1,
-            "x": 166,
+            "x": 208,
             "y": 166,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 2,
-            "x": 500,
+            "x": 624,
             "y": 166,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 3,
-            "x": 833,
+            "x": 1040,
             "y": 166,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 4,
-            "x": 166,
+            "x": 208,
             "y": 500,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 5,
-            "x": 500,
+            "x": 624,
             "y": 500,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 6,
-            "x": 833,
+            "x": 1040,
             "y": 500,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 7,
-            "x": 166,
+            "x": 208,
             "y": 833,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 8,
-            "x": 500,
+            "x": 624,
             "y": 833,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         },
         {
             "id": 9,
-            "x": 833,
+            "x": 1040,
             "y": 833,
-            "bandwidth": 2000000,
+            "bandwidth": 50000000,
             "frequency": 5000000000
         }
     ]

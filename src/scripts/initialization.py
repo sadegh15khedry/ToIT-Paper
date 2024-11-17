@@ -34,7 +34,7 @@ def initialize_vehicles(vehicle_file_path):
         vehicles.append(vehicle)
 
         print(f"Initialized {len(vehicles)} vehicles.")
-        return vehicles
+    return vehicles
     
 def load_mobility_csv(path):
     file = pd.read_csv(path)
