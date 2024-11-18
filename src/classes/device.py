@@ -2,15 +2,13 @@ import pandas as pd
 import random
 from reinforcement_learning_agent import ReinforcementLearningAgent
 from task import Task
-class Vehicle:
+class Device:
     def __init__(self, id, x, y, speed, direction, frequency):
         self.id = id
         self.x = x
         self.y = y
         self.frequency = frequency
         self.new_task_id = 0
-        self.speed = speed
-        self.direction = direction
         self.transmission_power = 300*(10**-3)
         self.running_task = None
         self.local_execution_queue = []
@@ -24,7 +22,6 @@ class Vehicle:
     def generate_task(self, time):
         size = random.randint(2,10)
         cycle = random.randint(2,10)
-        # print("Vehicle id:",self.id,"  Task size:",size,"  Task cycle", cycle)
         
         size *= 10**6
         cycle *= 10**9
@@ -32,11 +29,10 @@ class Vehicle:
             
         task = Task(self.get_new_task_id(), self, time, cycle, size)
         self.undecided_tasks.append(task)
-        # task.print_task_info()
-        # print(f"task:{task.id} is genenrated in the vehicle:{self.id}")
+
         
     def handle_task_finish(self, task, time):
-        print(f"-------------------------finish---------------task:{task.id}, energy:{task.energy}, response time: {task.response_time} location: {task.execution_location}")
+
         task.end_time = time
         self.finished_tasks.append(task)
         self.agent.check_if_need_to_update_q_table()
@@ -59,7 +55,6 @@ class Vehicle:
         is_finished = task.is_finished(time)
         if is_finished:
             self.handle_task_finish(task, time)
-            # print(f"task:{task.id} is finished processing on vehicle:{self.id}")
             
             return False
         return True
@@ -69,30 +64,14 @@ class Vehicle:
             task = self.local_execution_queue.pop(0)
             task.start_time = time
             self.running_task = task
-            # print(f"task:{task.id} is now processing on vehicle:{self.id}")
-            
-    
-    # def print_vehicle_info(self):
-    #     print(f"id: {self.id}, x: {self.x}, y: {self.y}, speed: {self.speed}, direction: {self.direction}")
-    #     print(f"undecided tasks count: {len(self.undecided_tasks)}")
     
         
     def find_closest_edge_server(self, edge_servers):
-        """
-        Finds and returns the closest edge server to the vehicle based on Euclidean distance.
 
-        Parameters:
-        - edge_servers (list): A list of edge server objects. Each server should have 'x' and 'y' attributes.
-
-        Returns:
-        - closest_server: The edge server object closest to the vehicle.
-        """
         min_distance = float('inf')  # Initialize with infinity
         closest_server = None        # Placeholder for the closest server
 
         for server in edge_servers:
-            # Extract 'x' and 'y' coordinates from the server
-            # Ensure they are scalar values, not Pandas Series or other iterable types
 
             # Handle server.x
             if isinstance(server.x, pd.Series):
@@ -116,33 +95,30 @@ class Vehicle:
             else:
                 server_y = server.y
 
-            # Ensure vehicle's 'x' and 'y' are scalars
+            # Ensure device's 'x' and 'y' are scalars
             if isinstance(self.x, pd.Series):
                 if self.x.empty:
-                    raise ValueError(f"Vehicle {self.id} has an empty 'x' value.")
+                    raise ValueError(f"Device {self.id} has an empty 'x' value.")
                 elif self.x.size == 1:
-                    vehicle_x = self.x.item()
+                    device_x = self.x.item()
                 else:
-                    raise ValueError(f"Vehicle {self.id} has multiple 'x' values: {self.x}")
+                    raise ValueError(f"Device {self.id} has multiple 'x' values: {self.x}")
             else:
-                vehicle_x = self.x
+                device_x = self.x
 
             if isinstance(self.y, pd.Series):
                 if self.y.empty:
-                    raise ValueError(f"Vehicle {self.id} has an empty 'y' value.")
+                    raise ValueError(f"Device {self.id} has an empty 'y' value.")
                 elif self.y.size == 1:
-                    vehicle_y = self.y.item()
+                    device_y = self.y.item()
                 else:
-                    raise ValueError(f"Vehicle {self.id} has multiple 'y' values: {self.y}")
+                    raise ValueError(f"Device {self.id} has multiple 'y' values: {self.y}")
             else:
-                vehicle_y = self.y
+                device_y = self.y
 
             # Calculate Euclidean distance
-            distance = ((server_x - vehicle_x)**2 + (server_y - vehicle_y)**2)**0.5
+            distance = ((server_x - device_x)**2 + (server_y - device_y)**2)**0.5
 
-            # Debugging Statements (Optional)
-            # Uncomment the following lines if you need to trace the values
-            # print(f"Vehicle ({vehicle_x}, {vehicle_y}) to Server {server.id} ({server_x}, {server_y}) Distance: {distance}")
 
             # Update the closest server if a closer one is found
             if distance < min_distance:

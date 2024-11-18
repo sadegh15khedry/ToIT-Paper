@@ -1,4 +1,4 @@
-name: farsi
+name: toit
 channels:
   - defaults
   - https://repo.anaconda.com/pkgs/main

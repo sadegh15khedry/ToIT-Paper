@@ -1,4 +1,4 @@
-from vehicle import Vehicle
+from device import Device
 from edge_server import EdgeServer
 import json
 import pandas as pd
@@ -24,17 +24,17 @@ def initialize_edge_servers(edge_server_file):
     
 
     
-def initialize_vehicles(vehicle_file_path):
-    config = load_config(vehicle_file_path)
-    vehicles = []
-    for vehicle_config in config['vehicles']:
-        vehicle = Vehicle(vehicle_config['id'], vehicle_config['x'], vehicle_config['y'],
-                                vehicle_config['speed'], vehicle_config['direction'], vehicle_config['frequency'])
-        print(f"vehicle id: {vehicle.id} x: {vehicle.x} y: {vehicle.y} speed: {vehicle.speed}, direction: {vehicle.direction}")
-        vehicles.append(vehicle)
+def initialize_devices(device_file_path):
+    config = load_config(device_file_path)
+    devices = []
+    for device_config in config['device']:
+        device = Device(device_config['id'], device_config['x'], device_config['y'],
+                                device_config['speed'], device_config['direction'], device_config['frequency'])
+        print(f"device id: {device.id} x: {device.x} y: {device.y} speed: {device.speed}, direction: {device.direction}")
+        devices.append(device)
 
-        print(f"Initialized {len(vehicles)} vehicles.")
-    return vehicles
+        print(f"Initialized {len(devices)} devices.")
+    return devices
     
 def load_mobility_csv(path):
     file = pd.read_csv(path)
