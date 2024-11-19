@@ -12,12 +12,13 @@ class Device:
         self.new_task_id = 0
         self.transmission_power = 300*(10**-3)
         self.running_task = None
-        self.local_execution_queue = []
+        self.undecided_local_execution = []
         self.unfinished_offload_tasks = []
         self.undecided_tasks = []
         self.finished_tasks = []
         self.agent = ReinforcementLearningAgent(self)
-       
+    
+    # def map_local_tasks(self):       
         
  
     def generate_task(self, time):
@@ -65,8 +66,8 @@ class Device:
         return True
          
     def run_new_task(self, time):
-        if self.local_execution_queue and self.running_task is None:
-            task = self.local_execution_queue.pop(0)
+        if self.undecided_local_execution and self.running_task is None:
+            task = self.undecided_local_execution.pop(0)
             task.start_time = time
             self.running_task = task
     

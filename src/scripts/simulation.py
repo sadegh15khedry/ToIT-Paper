@@ -54,7 +54,7 @@ class Simulation:
             # iteration_start_time = time.time()
             print(f"Iteration: {self.iteration_count}")
             
-            if(self.iteration_count % 10 == 1):
+            if(self.iteration_count % 3 == 1):
                 generate_tasks(self.devices, self.iteration_count)
             # manage_tasks(self.devices, self.edge_servers, self.iteration_count, self.algorithm)
 

@@ -22,18 +22,17 @@ def handle_undecided_tasks(device, edge_servers, algorithm):
     for task in device.undecided_tasks:
         closest_edge_server, distance = device.find_closest_edge_server(edge_servers)
         action = get_action(device, task, distance, algorithm)
-        
         device.undecided_tasks.remove(task)
+        
         if(action == 0):
             task.execution_location = 0
             task.set_execution_time(device.frequency)
             task.add_execution_energy(device.frequency)
             task.distance = distance   
             device.local_execution_queue.append(task)
+            print("task has been added to local unmapped list")
         elif(action == 1):
-
             device.unfinished_offload_tasks.append(task)
-
             task.execution_location = 1
             task.set_execution_time(closest_edge_server.frequency)
             task.add_transmission_energy(device.transmission_power, closest_edge_server.bandwidth, distance)
