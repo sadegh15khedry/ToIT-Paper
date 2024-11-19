@@ -1,17 +1,15 @@
 class EdgeServer:
-    def __init__(self, id, x, y, frequency, bandwidth):
+    def __init__(self, id, cores, x, y, bandwidth):
         self.id = id
         self.running_task = None
         self.x = x
         self.y = y
-        self.frequency = frequency
+        self.cores = cores
         self.task_queue = []
         self.channel = []
         self.finished_tasks = []
         self.bandwidth = bandwidth
         
-    # def print_edge_server_info(self):
-    #     print(f"Edge server Id: {self.id}, x:{self.x}, y:{self.y}")
 
 
     def check_channel(self, time):
@@ -23,26 +21,7 @@ class EdgeServer:
                 # print (f"task:{task.id} has been reached edge_server:{self.id}")
     
                 
-    def run_new_task(self, time):
-        if self.task_queue and self.running_task is None:
-            task = self.task_queue.pop(0)
-            task.start_time = time
-            self.running_task = task
 
-            
-            
-    def is_busy(self, time):
-        task = self.running_task
-        if task == None:
-            return False
-        
-        is_finished = task.is_finished(time)
-        if is_finished:
-            self.finished_tasks.append(task)
-            self.running_task = None
-            task.device.handle_task_finish(task, time)
-            return False
-        return True
 
 
         

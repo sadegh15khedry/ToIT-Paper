@@ -3,10 +3,11 @@ import random
 from reinforcement_learning_agent import ReinforcementLearningAgent
 from task import Task
 class Device:
-    def __init__(self, id, x, y, frequency):
+    def __init__(self, id, cores, x, y, frequency):
         self.id = id
         self.x = x
         self.y = y
+        self.cores = cores
         self.frequency = frequency
         self.new_task_id = 0
         self.transmission_power = 300*(10**-3)
@@ -27,7 +28,11 @@ class Device:
         cycle *= 10**9
         
             
-        task = Task(self.get_new_task_id(), self, time, cycle, size)
+        task = Task(self.get_new_task_id(), self, 0, time, cycle, size)
+        print(f"task_id: {task.id}, task_size: {task.size}, cycle: {task.execution_cycles}, type: {task.type} Generated!")
+        
+        task = Task(self.get_new_task_id(), self, 1, time, cycle, size)
+        print(f"task_id: {task.id}, task_size: {task.size}, cycle: {task.execution_cycles}, type: {task.type} Generated!")
         self.undecided_tasks.append(task)
 
         

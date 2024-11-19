@@ -3,7 +3,7 @@ class Task:
     v1=10**-3
     v2=4
     noise= 1.6*(10**-11)
-    def __init__(self, id, device, release_time, execution_cycles, size):
+    def __init__(self, id, device, type, release_time, execution_cycles, size):
         self.id = id
         self.device = device
         self.release_time = release_time
@@ -16,6 +16,7 @@ class Task:
         self.end_time = None
         self.energy = 0
         self.distance = 0
+        self.type = type # 0 for soft real-time and 1 for hard real-time tasks 
         self.execution_energy=0
         self.transfer_energy=0
         self.execution_location = None

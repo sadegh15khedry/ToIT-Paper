@@ -5,161 +5,501 @@
             "id": 1,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 2,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 3,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 4,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 5,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 6,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 7,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 8,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 9,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 10,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 11,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 12,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 13,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 14,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 15,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 16,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 17,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 18,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 19,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         },
         {
             "id": 20,
             "x": 100,
             "y": 200,
-            "speed": 4000,
-            "direction": 1000,
-            "frequency": 1000000000
+            "frequency": 1000000000,
+            "cores": 
+            [ 
+                {
+                    "id": 1,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 2,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 3,
+                    "frequency": 1000000000
+                },
+                {
+                    "id": 4,
+                    "frequency": 1000000000
+                }
+            ]
         }
         
     ]
