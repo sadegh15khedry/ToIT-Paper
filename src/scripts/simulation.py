@@ -6,10 +6,10 @@ import pandas as pd
 from report import save_report
 from reinforcement_learning_agent import ReinforcementLearningAgent
 from task_management import manage_tasks, generate_tasks
-from initialization import load_config, initialize_edge_servers, initialize_devices, load_mobility_csv
+from initialization import load_config, initialize_edge_servers, initialize_devices
 
 class Simulation:
-    def __init__(self, algorithm, time_step_length, max_iterations, mobility_file_path, mode, edge_file_path, device_file_path, report_path, q_table_path):
+    def __init__(self, algorithm, time_step_length, max_iterations, mode, edge_file_path, device_file_path, report_path, q_table_path):
         self.mode = mode
         self.edge_servers = initialize_edge_servers(edge_file_path)
         self.devices = initialize_devices(device_file_path)
@@ -21,7 +21,6 @@ class Simulation:
         self.time_step_length = time_step_length
         self.max_iterations = max_iterations
         self.report_path = report_path
-        self.mobility_file = load_mobility_csv(mobility_file_path)
         
     
     def save_q_table(self, q_table):

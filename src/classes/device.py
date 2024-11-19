@@ -3,7 +3,7 @@ import random
 from reinforcement_learning_agent import ReinforcementLearningAgent
 from task import Task
 class Device:
-    def __init__(self, id, x, y, speed, direction, frequency):
+    def __init__(self, id, x, y, frequency):
         self.id = id
         self.x = x
         self.y = y

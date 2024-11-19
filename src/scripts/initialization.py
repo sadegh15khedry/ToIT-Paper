@@ -27,10 +27,10 @@ def initialize_edge_servers(edge_server_file):
 def initialize_devices(device_file_path):
     config = load_config(device_file_path)
     devices = []
-    for device_config in config['device']:
+    for device_config in config['devices']:
         device = Device(device_config['id'], device_config['x'], device_config['y'],
-                                device_config['speed'], device_config['direction'], device_config['frequency'])
-        print(f"device id: {device.id} x: {device.x} y: {device.y} speed: {device.speed}, direction: {device.direction}")
+                                device_config['frequency'])
+        print(f"device id: {device.id} x: {device.x} y: {device.y}")
         devices.append(device)
 
         print(f"Initialized {len(devices)} devices.")
