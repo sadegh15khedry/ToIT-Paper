@@ -3,12 +3,13 @@ class Task:
     v1=10**-3
     v2=4
     noise= 1.6*(10**-11)
-    def __init__(self, id, device, type, release_time, execution_cycles, size):
+    def __init__(self, id, device, type, release_time, deadline, execution_cycles, size):
         self.id = id
         self.device = device
         self.release_time = release_time
         self.response_time = None
         self.transmission_time = 0
+        self.deadline = deadline
         self.size = size  # in MBs
         self.execution_time = None
         self.execution_cycles = execution_cycles

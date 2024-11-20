@@ -28,11 +28,12 @@ class Device:
         size *= 10**6
         cycle *= 10**9
         
+        
             
-        task = Task(self.get_new_task_id(), self, 0, time, cycle, size)
+        task = Task(self.get_new_task_id(), self, 0, time, time+1000, cycle, size)
         print(f"task_id: {task.id}, task_size: {task.size}, cycle: {task.execution_cycles}, type: {task.type} Generated!")
         
-        task = Task(self.get_new_task_id(), self, 1, time, cycle, size)
+        task = Task(self.get_new_task_id(), self, 1, time, time+1000, cycle, size)
         print(f"task_id: {task.id}, task_size: {task.size}, cycle: {task.execution_cycles}, type: {task.type} Generated!")
         self.undecided_tasks.append(task)
 
